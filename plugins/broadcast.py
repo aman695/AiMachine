@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters
 import datetime
 import time
@@ -65,4 +64,3 @@ async def broadcast_group(bot, message):
             await sts.edit(f"Broadcast in progress:\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")
-        
